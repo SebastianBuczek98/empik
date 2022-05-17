@@ -1,0 +1,31 @@
+#Database
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: none
+    database: POSTGRESQL
+    show-sql: true
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+
+# Swagger
+swagger:
+  api:
+    info:
+      title: Sebastian Buczek Empik API
+      description: Sebastian Buczek Empik zadanie rekrutacyjne
+      license: "Sebastian Buczek"
+      name: Sebastian Buczek
+      url:
+      email: sbuczek98@gmail.com
+      version: 1.0.0
+
+
+#Adapters
+github-users-api:
+  rest-template:
+    url: https://api.github.com
+    timeout: 20
